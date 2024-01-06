@@ -1,19 +1,19 @@
-public class InvertBinaryTree {
-    
-     static class TreeNode {
-             int val;
-             TreeNode left;
-             TreeNode right;
-             TreeNode() {}
-             TreeNode(int val) { this.val = val; }
-             TreeNode(int val, TreeNode left, TreeNode right) {
-                 this.val = val;
-                 this.left = left;
-                 this.right = right;
-             }
-     }
 
-//     Time complexity: O(N) we're visiting each node exactly one time
+class TreeNode{
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+public class InvertBinaryTree {
+//    Time complexity: O(N) we're visiting each node exactly one time
 //    Space complexity: O(n) we're using a single TreeNode, but we're creating him for each node.
     public static TreeNode invertTree(TreeNode root) {
          if(root == null){

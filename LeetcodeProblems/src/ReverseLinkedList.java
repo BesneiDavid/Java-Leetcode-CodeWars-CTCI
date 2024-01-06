@@ -8,6 +8,8 @@ class ListNode {
 
 public class ReverseLinkedList {
 
+
+
     public static ListNode reverseList(ListNode head) {
         ListNode reversedList = null;
 

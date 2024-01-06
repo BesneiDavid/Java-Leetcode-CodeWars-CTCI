@@ -1,5 +1,7 @@
 public class BalancedBinaryTree {
 
+//    Time complexity O(n) we're traversing each node one time
+//    Space complexity O(1) we have a global variable for the difference
     static int difference;
 
     public static TreeNode buildTree(Integer[] array, int index) {
@@ -36,6 +38,27 @@ public class BalancedBinaryTree {
 
         return Math.max(left,right);
     }
+
+//  Chat gpt solution which doesn't require a global variable
+    public static boolean isBalanced2(TreeNode root) {
+        return dfs(root) != -1;
+    }
+
+    public static int dfs2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int left = dfs(root.left);
+        int right = dfs(root.right);
+
+        if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
+            return -1;
+        }
+
+        return Math.max(left, right) + 1;
+    }
+
 
     public static void main(String[] args) {
         Integer[] array = {};

@@ -4,8 +4,6 @@ public class ValidParentheses {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
-
-
         for(char c: s.toCharArray()){
             if(c =='(' || c=='[' || c== '{'){
                 stack.push(c);
@@ -15,7 +13,6 @@ public class ValidParentheses {
                 return false;
 
             }
-
                 if (c == ')' && stack.pop() != '(') {
                     return false;
                 }
