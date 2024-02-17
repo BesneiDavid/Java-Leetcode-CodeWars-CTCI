@@ -6,7 +6,7 @@ public class LastStoneWeight {
 //    My solution
 //    Time complexity: O(n*log n) this is the max time complexity although we have 2 loops the log part is coming from
 //    inserting and removing elements from the priorityQueue
-//    Space complexity: O(n) because we're using a heap to store all the stones from the array.
+//    Space complexity: O(n) because we're using a heap to store all the stones from the array
 
     public static int lastStoneWeight(int[] stones) {
         Comparator<Integer> comparator = Collections.reverseOrder();
