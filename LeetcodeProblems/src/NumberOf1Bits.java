@@ -24,7 +24,6 @@ public class NumberOf1Bits {
         while (n != 0) {
             n = n & (n-1);
             counter++;
-            n = n >>> 1;
         }
         return counter;
     }
