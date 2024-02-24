@@ -1,3 +1,5 @@
+package TwoPointers_Easy;
+
 public class IsPalindrome {
 //    We're using the two pointer method and a string to iterate through
 //    Time Complexity O(c) where c = n/2, so we don't need to iterate through the whole number
