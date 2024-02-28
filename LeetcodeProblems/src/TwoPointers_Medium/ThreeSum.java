@@ -47,7 +47,6 @@ public class ThreeSum {
         int[] arr={0,1,2,2,3,0,4,2};
 
         String s = "ggububgvfk";
-        System.out.println(lengthOfLongestSubstring(s));
 //        System.out.println(threeSum(arr).size());
     }
 }
