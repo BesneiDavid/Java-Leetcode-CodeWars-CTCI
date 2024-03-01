@@ -27,6 +27,19 @@ public class EvaluateReversePolishNotation {
         return numbers.pop();
     }
 
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+        int first=0;
+        int second=0;
+        while(nums1[first]!=0 && first<m-1){
+            if(nums1[first]<=nums2[second]){
+                first++;
+            } else {
+                nums1[first]=nums2[second];
+                second++;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         String[] arr={"4","3","-"};
         System.out.println(evalRPN(arr));
